@@ -1,0 +1,313 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+% \geometry{left=.75cm,right=11.25cm,marginparwidth=9.75cm,marginparsep=0.5cm,top=1cm,bottom=1cm}
+\geometry{left=1cm,right=11cm,marginparwidth=9cm,marginparsep=1cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  % \usepackage[default]{lato}
+  \usepackage{newtxtext}
+\fi
+
+\usepackage{verbatim}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue,citecolor=blue,breaklinks=true,bookmarks=false, pdfpagemode=FullScreen]{hyperref}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\definecolor{BigWhite}{HTML}{FFFFFF}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\colorlet{uw}{BigWhite}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+% \addbibresource{Ryan.bib}
+
+\begin{document}
+\name{Kuo-Fang Chung}
+\tagline{}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+% \photo{2cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \phone{+886-978358116}
+  \email{d08941008@ntu.edu.tw}
+%  \mailaddress{Address, Street, 00000 County}
+%   \location{Gurugram, India}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+  \linkedin{linkedin.com/in/kuo-fang-chung-6a99a114a}
+   % \github{github.com/abhishakvarshney}
+   \skype{live:.cid.7b08ceba4e8052b6}
+   %   \phone{000-00-0000}
+% I'm just making this up though.
+  % \orcid{orcid.org/0000-0001-6457-4861} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+\AtBeginEnvironment{itemize}{\normalsize}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+
+\cvsection[page1sidebar]{SKILLS}
+\begin{itemize}\normalsize
+\justifying 
+\item {\bf\large Optical simulation method/software: }\\
+        FDTD, varFDTD, FDE, EME, Charge, Heat, Interconnect (Lumerical); BPM (RSoft) for AWG
+\item {\bf\large Evolutionary algorithm for photonic design: }\\
+        Adaptive particle swarm optimization, Genetic algorithm, Simulated annealing, etc.
+\item {\bf\large Analytical skills: }
+        Python, Matlab, Mathcad
+\item {\bf\large Secondary skills: }
+        COMSOL, TCAD, Zemax
+\end{itemize}
+
+
+\cvsection{Project Experience}
+    \begin{enumerate}\normalsize
+        \justifying
+        \item {\bf\large 1.6~Tbps transceiver module chips based on Silicon Photonics platform}\\Ministry of Science and Technology\\
+                \small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.2em} 2018.08 -- 2022.09}
+                \small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.2em} Taipei, Taiwan}\\
+                \vspace{-1em}\begin{itemize}\normalsize
+                    \item Committed to SiPh device \& system simulations, layout patterning, DRC, 
+                            chip tape-out, wire-bonding diagram, etc. (Foundry: IMEC)
+                    \item High-performance Silicon Photonics component designs including: 
+                            \textbf{E}dge coupler, \textbf{G}rating coupler, \textbf{M}ulti-mode interferometer, 
+                            \textbf{M}ach--Zehnder interferometer, \textbf{M}ach--Zehnder modulator, \textbf{A}rrayed waveguide grating, 
+                            \textbf{O}ptical phased array, \textbf{L}attice filter, \textbf{B}ragg-assisted WDM filter, etc.
+                \end{itemize}
+        \divider
+        \item {\bf\large Design \& characterization of on-wafer testing pattern for InP platform} \\WIN Semiconductor Corp.\\
+                \small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.2em} 2019.08 -- 2022.07}
+                \small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.2em} Taipei, Taiwan}\\
+                \vspace{-1em}\begin{itemize}\normalsize
+                    \item Implemented testing patterns: \textbf{E}dge coupler, \textbf{M}ulti-mode interferometer, 
+                            \textbf{T}ransition, \textbf{M}ach-Zehnder interferometer, \textbf{A}rrayed waveguide grating, 
+                            \textbf{L}attice filter, \textbf{M}icro-ring resonator.
+                    \item Formulated evaluation on characterization of waveguide propagation loss using nothing but electrical probes.
+                \end{itemize}
+    \end{enumerate}
+
+
+\cvsection{Thesis and Dissertation}
+\begin{itemize}
+\justifying
+\item {\large \textbf{Master Thesis}}\\
+        {\normalsize ``Optimization of bandwidth of Si-Based Lateral Junction Traveling Wave Mach-Zehnder Modulator by using Genetic Algorithm'' \bf\textit{(Advisor: Ding-Wei Huang)}}
+
+\item {\large \textbf{Doctoral Dissertation}}\\
+        {\normalsize ``Wavelength division (de)multiplexer based on Silicon Photonics platform'' \bf\textit{(Advisor: Ding-Wei Huang)}}
+\end{itemize}
+
+
+\cvsection{Education}
+    \begin{itemize}
+    \justifying
+    \item \textbf{\normalsize Ph.D., Graduate Institute of Photonics and Optoelectronics, \\(GPA = 4.25/4.3)}\\
+            \hspace{5em} \normalsize National Taiwan University \\
+            \small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.2em} 2019.09 -- 2022.09}
+            \small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.2em} Taipei, Taiwan}
+    \item \textbf{\normalsize M.S., Graduate Institute of Photonics and Optoelectronics,} \\
+            \hspace{5em} \normalsize National Taiwan University \\
+            \small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.2em} 2016.02 -- 2019.04}
+            \small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.2em} Taipei, Taiwan}
+    \item \textbf{\normalsize B.S., Department of Electrical Engineering,} \\
+            \hspace{5em} \normalsize National Taiwan University \\
+            \small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.2em} 2012.09 -- 2016.01}
+            \small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.2em} Taipei, Taiwan}
+    \end{itemize}
+
+%....................................................... for extending publications at next page..............................................................%
+\begin{comment}     % comment if need more page for list of publication
+% \addnextpagesidebar[1ex]{page2right}
+\addnextpagesidebar[1ex]{}
+    \justifying
+    \begin{enumerate}\setcounter{enumi}{3}
+        % 4
+        \item S. Kao, \underline{\textbf{K. Chung}}, C. Tsai, D. Huang, T. Shih, and G. Lin, ``High-Baud-Rate 32-QAM OFDM Single-arm and Dual-arm Encoded Silicon Mach-Zehnder Modulator,'' \textit{2021 30th Wireless and Optical Communications Conference (WOCC)}, 46--48 (2021).
+        
+        % 5
+        % \item J. Su, \underline{\textbf{K. Chung}}, \textit{et al.}, ``Ge p-i-n Photodiode as 60-Gbit/s Optical NRZ-OOK Data Receiver,'' \textit{IEEE J. Lightw. Technol.}, \textbf{40}(13), 4326--4336 (2022).
+
+        % 6
+        % \item Y. Shih, \underline{\textbf{K. Chung}}, \textit{et al.}, ``Partial Parabolic Single Layer Crossing for Silicon-on-Insulator Nanophotonic Waveguides,'' \textit{IEEE Photon. J.}, \textbf{14}(2), 1--6 (2022).
+
+        % 7
+        % \item D. Lin, \underline{\textbf{K. Chung}}, \textit{et al.}, ``Pre-Compensating the Shifted Power-to-Bias Response of Si Waveguide Modulator Induced by High-Speed Encoding,'' \textit{Conference on Lasers and Electro-Optics, Technical Digest Series (Optica Publishing Group, 2022)}, paper JTh3B.29.
+    \end{enumerate}
+\end{comment}       % comment if need more page for list of publication
+
+
+
+% \cvevent{National Taiwan University}
+% {Ph.D., Graduate Instuite of Photonics and Optielectronics. (GPA = 4.25/4.3)}
+% {2019.09 -- 2022.09}{Taipei, Taiwan}
+%\divider
+% \cvevent{National Taiwan University}
+% {$\bullet$ M.S., Graduate Instuite of Photonics and Optielectronics.}
+% {2016.02 -- 2019.05}{Taipei, Taiwan}
+% \divider
+% \cvevent{National Taiwan University}
+% {$\bullet$ B.S., Department of Electrical Engineering.}
+% {2012.09 -- 2016.01}{Taipei, Taiwan}
+% \divider
+
+
+% \cvsection{Achievements}
+% \cvevent{}{Optimization of forward-bias rib-type modulator using user-defined Genetic Algorithm over Matlab}{2017.01 -- 2017.02}{}
+% \cvproject{\textit{NLP - ChatBot (ARENA)}}
+% \begin{itemize}
+% \item Elite Doctoral Scholarship (40--50k/month, for 4 years) by MOST via NTU (\url{https://shorturl.at/jkZ78})
+% \item High-speed MZM, high-efficiency subwavelength grating-assisted MMI splitter, ultra-compact broadband PSR, etc.
+% \item Klayout-Python module for efficient layout, automatic process flow for Lumerical cloud optimization on local PC.
+% \item High-capacity AWG for 1.6~Tbps transmission rate, bi-directionally tunable AWG.
+% \item Multiple high-efficiency devices such as grating coupler, Bragg grating-assisted WDM filter.
+% \end{itemize}
+
+% \begin{itemize}
+% \item Research and development of Computer Vision algorithms centered around the video surveillance domain in collaboration with NCETIS, IIT Bombay.
+% \smallskip
+% \item Working with team on design, development and integration of real-time video analytic solution.
+% \smallskip
+% \item Leading the team on the training and evaluation of Deep Neural Network models.
+% \smallskip
+% \item Experience with performance analysis, optimizations and benchmark evaluations.
+% \end{itemize}
+
+% \divider
+
+% \cvevent{Trainee | INTERNSHIP}{Tata Steel}{May 2017 - July 2017}{Jamshedpur,India}
+% \cvproject{\textit{Heat \& Mass Balance in BOF Vessel}}
+% \begin{itemize}
+% \item Analyzed and Balanced Heat and Mass data from Raw Material to liquid steel making process i.e. from raw to production.
+% \smallskip
+% \item\bf{Technology}{: MS -- Excel}
+% \item Incorporated various Machine Learning features in Atos's internal tools, in order to utilize the performance gain offered by Machine Learning algorithms.
+% \item Deploying machine learning solution on cloud.
+% \end{itemize}
+
+% %\divider
+
+% \cvsection{Certification}
+% \begin{itemize}
+    % \item\bf{Machine Learning}\normalfont{: Coursera}
+    % \item\bf{R Basics – R Programming Language Introduction}\normalfont{:  Udemy}
+    % \item\bf{Introduction to Python Programming}\normalfont{: Udemy}
+    % \item\bf{MongoDB Basics}\normalfont{: MongoDB Inc. -- MongoDB University}
+    % \item\bf{SQL Fundamental Course}\normalfont{: SOLOLearn}
+% \end{itemize}
+
+% \cvsection{Achievements}
+% \begin{itemize}
+% \item Placed in top 21\% in Housing Price Prediction Kaggle challenge
+% \item Secured II rank in 'International Robotics Challenge – Sixth Sense Robotics – 2014' organized by 'ROBOTech Labs and IIT-Bombay'.
+% \smallskip
+% \item{Participated in }\bf{‘58th National School Skating Championship 2012-13’}\normalfont{ organized by}\bf{ ‘Indian Olympic Association’}
+% \smallskip
+% \item \normalfont Secured I rank in ‘State Skating Championship-2012’ organized by ‘Vidya-Bharti’ at Meerut.
+% \end{itemize}
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+% \clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+% \nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% %% If the NEXT page doesn't start with a \cvsection but you'd
+% %% still like to add a sidebar, then use this command on THIS
+% %% page to add it. The optional argument lets you pull up the
+% %% sidebar a bit so that it looks aligned with the top of the
+% %% main column.
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+
+\end{document}

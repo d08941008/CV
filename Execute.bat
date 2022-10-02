@@ -1,0 +1,2 @@
+pdflatex mainsidebar.tex
+pause
